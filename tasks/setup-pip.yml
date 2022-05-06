@@ -1,4 +1,9 @@
 ---
+- name: Remove Ansible via OS packager.
+  package:
+    name: ansible
+    state: absent
+
 - name: Install Ansible via Pip.
   pip:
     name: ansible
